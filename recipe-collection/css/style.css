@@ -1,0 +1,135 @@
+/***** TEXT *****/
+
+h1, h2, h3 {
+  color: #F16059;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+
+}
+p, li {
+  color: #3B3B3B;
+  font-family: "Open Sans", sans-serif;
+}
+strong {
+  font-family: "Montserrat", sans-serif;
+}
+
+/***** CONTAINERS *****/
+
+body {
+  background-color: #DAF7F6;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+main {
+  width: 90%;
+}
+
+
+/***** HEADER *****/
+
+header {
+  background-color: white;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: large;
+  align-items: center;
+  margin-bottom: 35px;
+  box-shadow: 0px 0px 10px #3B3B3B;
+
+}
+header img {
+  width:48px;
+  height:40px;
+  margin-right: 24px;
+}
+header h1 {
+  text-transform: uppercase;
+}
+
+/***** ARTICLES *****/
+
+article {
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  margin-bottom: 35px;
+  border-radius: 15px;
+  box-shadow: 1px 1px 10px #3B3B3B;
+  min-height: 100vh;
+}
+.card > * {
+  width:50%;
+}
+.card .image {
+  background-size: cover;
+  background-position: top center;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+
+
+}
+#cookies .image {
+  background-image: url(../img/gluten-free-sugar-cookies.jpg);
+}
+#pesto .image {
+  background-image: url(../img/nut-free-pesto.jpg);
+}
+#salad .image {
+  background-image: url(../img/watermelon-salad.jpg);
+}
+
+.recipe {
+  padding:0 2%;
+}
+.time {
+  font-size: x-small;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  outline: 3px solid black;
+  text-transform: uppercase;
+}
+
+.time > * {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.time .cook {
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  padding: 0 20px;
+}
+
+.time img {
+  width:30px;
+  height:30px;
+  margin-right: 10px;
+}
+
+.columns {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+}
+ .columns > * {
+   width: 45%;
+   font-size: small;
+ }
+ .columns h3 {
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+   padding: 5px 0 8px 10px;
+ }
+ li {
+   line-height: 40px;
+ }
+ .ingredients li {
+   list-style: square;
+ }
